@@ -1,7 +1,9 @@
 
-# Github metadata importer 
+# GitHub metadata importer 
 
 This tool imports GitHub metadata from repositories into the Software Observatory database. It identifies the GitHub repositories listed in the database entries, retrieves metadata for each repository using the [GitHub metadata API](https://github.com/inab/github-metadata-api), and stores the retrieved metadata back in the database.
+
+If you are looking for a tool to import metadata from a GitHub repository, you can directly use the [GitHub metadata importer](https://github.com/inab/github-metadata-api) tool. More specifically, use the `https://observatory.openebench.bsc.es/github-metadata-api/metadata/user` endpoint (see details in the  [documentation](https://observatory.openebench.bsc.es/github-metadata-api/api-docs/#/Metadata%20Extractor%20for%20FAIRsoft/post_metadata_user)).
 
 ## Installation
 
