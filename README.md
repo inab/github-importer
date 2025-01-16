@@ -24,6 +24,7 @@ The tool requires the following environment variables to be set:
 - `PRETOOLS`: the name of the Pretools database. The tool will read the list of repositories from this database.
 - `GITHUB_TOKEN`: the user GitHub token to use for the GitHub metadata API. The token must have `read:packages` enabled.
 
+Put these environment variables in a `.env` file in the root directory of the project.
 
 ## Usage
 
