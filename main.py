@@ -109,8 +109,8 @@ if __name__ == '__main__':
 
     token = os.getenv('GITHUB_TOKEN')
 
-    ALAMBIQUE = os.getenv('ALAMBIQUE', default='alambiqueDev')
-    alambique_collection = connect_db(ALAMBIQUE)
+    REPOSITORIES = os.getenv('REPOSITORIES', default='repositoriesDev')
+    repositories_collection = connect_db(REPOSITORIES)
     PRETOOLS = os.getenv('PRETOOLS', default='pretoolsDev')
     pretools_collection = connect_db(PRETOOLS)
 
@@ -132,8 +132,8 @@ if __name__ == '__main__':
                     'data': retrieved_info,
                     '@data_source': 'github'
                 }
-                document_w_metadata = add_metadata_to_entry(identifier, entry, alambique_collection)
-                push_entry(document_w_metadata, alambique_collection)
+                document_w_metadata = add_metadata_to_entry(identifier, entry, repositories_collection)
+                push_entry(document_w_metadata, repositories_collection)
                 #print('New entry inserted to the database.')
                 #print(document_w_metadata)
             else:

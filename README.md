@@ -16,13 +16,13 @@ pip install -r requirements.txt
 ## Configuration
 The tool requires the following environment variables to be set:
 
-- `MONGO_HOST`: the hostname of the MongoDB server
-- `MONGO_PORT`: the port of the MongoDB server
-- `MONGO_USER`: the username for the MongoDB server
-- `MONGO_PWD`: the password for the MongoDB server
-- `MONGO_AUTH_SRC`: the authentication source for the MongoDB server
-- `MONGO_DB`: the name of the MongoDB database
-- `ALAMBIQUE`: the name of the Alambique database.The metadata gathered wilb be stored in this database.
+- `MONGO_HOST`: the hostname of the MongoDB server.
+- `MONGO_PORT`: the port of the MongoDB server.
+- `MONGO_USER`: the username for the MongoDB server.
+- `MONGO_PWD`: the password for the MongoDB server.
+- `MONGO_AUTH_SRC`: the authentication source for the MongoDB server.
+- `MONGO_DB`: the name of the MongoDB database.
+- `REPOSITORIES`: the name of the database where the gathered metadata will be stored.
 - `PRETOOLS`: the name of the Pretools database. The tool will read the list of repositories from this database.
 - `GITHUB_TOKEN`: the user GitHub token to use for the GitHub metadata API. The token must have `read:packages` enabled.
 
